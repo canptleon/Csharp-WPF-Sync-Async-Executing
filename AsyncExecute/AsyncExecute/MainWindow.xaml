@@ -1,0 +1,18 @@
+﻿<Window x:Class="AsyncExecute.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AsyncExecute"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <Label Content="Simple Async Demo App" FontSize="28" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="56" Width="580" FontWeight="Bold"/>
+        <Button x:Name="executeSync" Content="Normal Execute&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,71,0,0" VerticalAlignment="Top" Height="42" Width="580" Click="executeSync_Click" FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="executeAsync" Content="Async Execute&#xD;&#xA;" HorizontalAlignment="Center" Margin="0,118,0,0" VerticalAlignment="Top" Height="42" Width="580" Click="executeAsync_Click" FontWeight="Bold" FontSize="20"/>
+        <TextBlock x:Name="resultsWindow" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="209" Width="580"/>
+
+    </Grid>
+
+
+</Window>
